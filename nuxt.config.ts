@@ -1,15 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
- devtools: { enabled: true },
-
- modules: [
-					'@nuxtjs/tailwindcss',
-					'@nuxtjs/color-mode'
+	devtools: { enabled: false },
+	modules: [
+		'@nuxtjs/tailwindcss',
+		'@nuxtjs/color-mode',
+		'@nuxt/content'
 	],
-
- colorMode: {
-					classSuffix: ''
+	content: {
+		highlight: {
+			theme: {
+				default: 'min-light',
+				dark: 'min-dark'
+			}
+		}
 	},
+	colorMode: {
+		classSuffix: ''
+	},
+	tailwindcss: {
+		config: {
 
- compatibilityDate: '2025-05-05'
+			plugins: [require('@tailwindcss/typography')],
+		},
+	},
+	compatibilityDate: '2025-05-05'
 })

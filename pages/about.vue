@@ -1,11 +1,5 @@
-<script setup>
-	useHead({
-		title: 'About'
-	})
-</script>
-
 <template>
-	<div>
-		This page is about me.
-	</div>
+	<article class="prose d">
+		<ContentDoc path="/about" />
+	</article>
 </template>
