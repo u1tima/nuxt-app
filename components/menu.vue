@@ -6,13 +6,16 @@
 						  class="link">Main</NuxtLink>
 			</li>
 			<li>
-				<NuxtLink to="/about">About</NuxtLink>
+				<NuxtLink to="/about"
+						  class="link">About</NuxtLink>
 			</li>
 			<li>
-				<NuxtLink to="/projects">Projects</NuxtLink>
+				<NuxtLink to="/projects"
+						  class="link">Projects</NuxtLink>
 			</li>
 			<li>
-				<NuxtLink to="/blog">Blog</NuxtLink>
+				<NuxtLink to="/blog"
+						  class="link">Blog</NuxtLink>
 			</li>
 		</ul>
 	</nav>
