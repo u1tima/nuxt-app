@@ -27,8 +27,6 @@
 
 		return result
 	})
-
-	console.log(posts)
 </script>
 
 <template>

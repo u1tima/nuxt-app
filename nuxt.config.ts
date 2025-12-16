@@ -27,5 +27,10 @@ export default defineNuxtConfig({
 			plugins: [require('@tailwindcss/typography')],
 		},
 	},
+	nitro: {
+		prerender: {
+			routes: ['/sitemap.xml']
+		}
+	},
 	compatibilityDate: '2025-05-05'
 })
